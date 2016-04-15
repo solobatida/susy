@@ -1,0 +1,101 @@
+/*$widelayout:(
+        columns:24,
+        gutters: 1/4,
+        math:fluid,
+        output:float,
+        gutter-position:inside,
+);*/
+body {
+  background: #eee;
+  font-family: sans-serif;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background: url("../img/minipony.jpg");
+}
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+aside ul {
+  padding: 0;
+}
+aside ul li {
+  list-style: none;
+  margin: 0;
+}
+aside ul li a {
+  display: block;
+  padding: 10px 5%;
+  text-decoration: none;
+  color: crimson;
+  border-bottom: 1px solid darkred;
+}
+
+/*una manera de definir 8 columnas
+main {
+  @include span(8);
+  text-align: justify;
+}*/
+/*sintaxi breve
+main {
+  @include span(8 at 0 of 24 1/8);
+}*/
+@media (min-width: 800px) {
+  main {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%;
+    float: left;
+    padding-left: 2.08333%;
+    padding-right: 2.08333%;
+    text-align: justify;
+  }
+
+  aside {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: right;
+    padding-left: 2.08333%;
+    padding-right: 2.08333%;
+  }
+}
+@media (min-width: 1000px) {
+  main {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 87.5%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+    text-align: justify;
+  }
+  main .col1,
+  main .col2,
+  main .col3 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 2.08333%;
+    padding-right: 2.08333%;
+  }
+
+  aside {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 12.5%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
