@@ -31,11 +31,11 @@ $susy:(
 //@include with-layout(12) {
 
   body {
-    background: #eee;
+    background: lightpink;
     font-family: sans-serif;
     @include container(80%);
     background-size: cover;
-    background: url("../img/minipony.jpg");
+
   }
 
   aside ul {
