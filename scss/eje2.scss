@@ -1,0 +1,49 @@
+$col-61: #bb8a15;
+$col-62: #c8a860;
+$col-63: #d1c49a;
+$col-64: #987d63;
+$col-65: #b7a28a;
+$col-66: #cbbead;
+$col-67: #383128;
+
+header {
+  div {
+    background: $col-61;
+    min-height: 200px;
+    padding: 5px 20px;
+  }
+}
+nav {
+  background: $col-62;
+  min-height: 50px;
+}
+
+#main {
+  width: 70%;
+  float: left;
+  min-height: 500px;
+  background: $col-63;
+  .half {
+    min-height: 100px;
+    background: $col-65;
+    width: 49%;
+    float: left;
+    &:first-child {
+      border-right: 5px solid;
+    }
+  }
+}
+
+aside {
+  float: right;
+  width: 30%;
+  min-height: 500px;
+  background: $col-66;
+}
+
+footer {
+  clear: both;
+  min-height: 100px;
+  background: $col-67;
+  color: $col-63;
+}
